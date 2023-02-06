@@ -9,12 +9,20 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var errorLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setupElements()
         // Do any additional setup after loading the view.
     }
     
+    // MARK: Functions
+    
+    func setupElements() {
+        errorLabel.isHidden = true
+    }
 
     /*
     // MARK: - Navigation
