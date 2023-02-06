@@ -39,11 +39,11 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FJn-nI-AfJ" userLabel="ScrollView Stack">
                                         <rect key="frame" x="0.0" y="206.66666666666669" width="295" height="186"/>
                                         <subviews>
-                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0re-qH-TKK">
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" scrollEnabled="NO" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0re-qH-TKK">
                                                 <rect key="frame" x="0.0" y="0.0" width="295" height="150"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus.rectangle.on.folder.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zgs-1i-b1Q">
-                                                        <rect key="frame" x="66" y="28.333333333333314" width="163" height="92"/>
+                                                        <rect key="frame" x="20" y="20.666666666666657" width="256.33333333333331" height="108"/>
                                                     </imageView>
                                                 </subviews>
                                                 <constraints>
@@ -127,7 +127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jTt-bO-iC1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2764" y="-749"/>
+            <point key="canvasLocation" x="2764" y="-750"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="O4E-17-WVj">
@@ -191,7 +191,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Log In"/>
                                         <connections>
-                                            <segue destination="lBP-jO-qMo" kind="show" id="mM6-Aw-qb9"/>
+                                            <segue destination="Vl3-nX-3rT" kind="show" id="IaS-84-hiY"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1k-9D-wUe">
@@ -211,32 +211,22 @@
                             <constraint firstItem="JKl-9l-4Ne" firstAttribute="leading" secondItem="coi-VL-YWJ" secondAttribute="leading" constant="40" id="QS7-4t-7pE"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="drm-AC-y7Z"/>
                     <connections>
                         <outlet property="errorLabel" destination="e1k-9D-wUe" id="WlM-25-sU0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Suj-FB-rVl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1800.8" y="-337.6847290640394"/>
+            <point key="canvasLocation" x="1801" y="-355"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Home-->
         <scene sceneID="7bd-Cp-deF">
             <objects>
-                <viewController id="lBP-jO-qMo" customClass="HomeViewController" customModule="MyMembers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lBP-jO-qMo" userLabel="Home" customClass="HomeViewController" customModule="MyMembers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tPI-Ww-QAO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uu0-wl-g5H">
-                                <rect key="frame" x="0.0" y="43" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Home" id="CaF-jC-h7R">
-                                        <barButtonItem key="rightBarButtonItem" title="Logout" id="oDM-OP-xnO"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hqv-mT-39l">
                                 <rect key="frame" x="40" y="107" width="295" height="48"/>
                                 <subviews>
@@ -263,11 +253,51 @@
                             <constraint firstItem="tWz-XE-leb" firstAttribute="trailing" secondItem="hqv-mT-39l" secondAttribute="trailing" constant="40" id="ihh-eO-RA5"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="J64-rq-emc"/>
                     <navigationItem key="navigationItem" id="T11-dq-50g"/>
+                    <connections>
+                        <outlet property="navItem" destination="T11-dq-50g" id="V8W-UK-LUY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qxL-Vz-bI4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2764" y="3"/>
+            <point key="canvasLocation" x="1801" y="1176"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="SW0-AE-NZc">
+            <objects>
+                <tabBarController id="Vl3-nX-3rT" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dQV-qo-Otk"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Vnt-nk-0gG">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="lBP-jO-qMo" kind="relationship" relationship="viewControllers" id="LWp-hn-8ZQ"/>
+                        <segue destination="ZWE-w3-jt4" kind="relationship" relationship="viewControllers" id="vQO-ux-NCp"/>
+                        <segue destination="c5s-rc-hl7" kind="relationship" relationship="viewControllers" id="vbj-um-TPw"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bui-9v-fqb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2764" y="386"/>
+        </scene>
+        <!--Add Membership-->
+        <scene sceneID="oTp-V9-ZFQ">
+            <objects>
+                <viewController id="ZWE-w3-jt4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T9I-vz-nIY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="S4X-1m-mfr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Add Membership" image="plus.circle.fill" catalog="system" id="sny-c1-mnz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kJ0-wn-GDl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2764" y="1176"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="w0M-8V-htA">
@@ -373,7 +403,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Sign Up"/>
                                         <connections>
-                                            <segue destination="lBP-jO-qMo" kind="show" id="INV-sU-LDP"/>
+                                            <segue destination="Vl3-nX-3rT" kind="show" id="MQo-Bo-mOo"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13X-q6-Ron">
@@ -417,6 +447,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oj7-GF-6sf">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Gqb-WJ-bm1"/>
                     </connections>
@@ -425,11 +458,30 @@
             </objects>
             <point key="canvasLocation" x="61.538461538461533" y="3.5545023696682461"/>
         </scene>
+        <!--Account-->
+        <scene sceneID="q9I-0d-fYa">
+            <objects>
+                <viewController id="c5s-rc-hl7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KQY-3z-1Dc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Iej-WX-yfe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Account" image="person.circle.fill" catalog="system" id="J4s-EW-NgL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IVc-tf-HKZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3745" y="1176"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="INV-sU-LDP"/>
+        <segue reference="MQo-Bo-mOo"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="person.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="plus.circle.fill" catalog="system" width="128" height="123"/>
         <image name="plus.rectangle.on.folder.fill" catalog="system" width="128" height="95"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
