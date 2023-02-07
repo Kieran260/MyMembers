@@ -18,6 +18,20 @@
 		5186089D29903A51000B0CF9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5186089C29903A51000B0CF9 /* LoginViewController.swift */; };
 		5186089F29903A5E000B0CF9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5186089E29903A5E000B0CF9 /* HomeViewController.swift */; };
 		5196596C2991623B00FF47D5 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196596B2991623B00FF47D5 /* Utilities.swift */; };
+		51EC107D2991ACED0070E46C /* ArticulatCF-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 51EC10732991ABA00070E46C /* ArticulatCF-Bold.otf */; };
+		51EC107E2991ACF00070E46C /* ArticulatCF-BoldOblique.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 51EC10722991ABA00070E46C /* ArticulatCF-BoldOblique.ttf */; };
+		51EC107F2991ACF20070E46C /* ArticulatCF-DemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 51EC107B2991ABA10070E46C /* ArticulatCF-DemiBold.otf */; };
+		51EC10802991ACF50070E46C /* ArticulatCF-DemiBoldOblique.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 51EC106E2991AB9F0070E46C /* ArticulatCF-DemiBoldOblique.ttf */; };
+		51EC10812991ACF70070E46C /* ArticulatCF-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 51EC10742991ABA00070E46C /* ArticulatCF-ExtraBold.ttf */; };
+		51EC10822991ACF90070E46C /* ArticulatCF-ExtraBoldOblique.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 51EC106F2991AB9F0070E46C /* ArticulatCF-ExtraBoldOblique.ttf */; };
+		51EC10842991ACFD0070E46C /* ArticulatCF-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 51EC10762991ABA00070E46C /* ArticulatCF-ExtraLight.ttf */; };
+		51EC10852991AD000070E46C /* ArticulatCF-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 51EC107A2991ABA10070E46C /* ArticulatCF-Light.otf */; };
+		51EC10862991AD020070E46C /* ArticulatCF-LightOblique.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 51EC10782991ABA00070E46C /* ArticulatCF-LightOblique.ttf */; };
+		51EC10872991AD040070E46C /* ArticulatCF-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 51EC10792991ABA10070E46C /* ArticulatCF-Medium.ttf */; };
+		51EC10882991AD070070E46C /* ArticulatCF-MediumOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 51EC10712991ABA00070E46C /* ArticulatCF-MediumOblique.otf */; };
+		51EC10892991AD0A0070E46C /* ArticulatCF-Normal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 51EC10772991ABA00070E46C /* ArticulatCF-Normal.ttf */; };
+		51EC108A2991AD0C0070E46C /* ArticulatCF-NormalOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 51EC107C2991ABA10070E46C /* ArticulatCF-NormalOblique.otf */; };
+		51EC108B2991AD240070E46C /* ArticulatCF-ThinOblique.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 51EC10702991AB9F0070E46C /* ArticulatCF-ThinOblique.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +48,21 @@
 		5186089C29903A51000B0CF9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5186089E29903A5E000B0CF9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5196596B2991623B00FF47D5 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		51EC106E2991AB9F0070E46C /* ArticulatCF-DemiBoldOblique.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArticulatCF-DemiBoldOblique.ttf"; sourceTree = "<group>"; };
+		51EC106F2991AB9F0070E46C /* ArticulatCF-ExtraBoldOblique.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArticulatCF-ExtraBoldOblique.ttf"; sourceTree = "<group>"; };
+		51EC10702991AB9F0070E46C /* ArticulatCF-ThinOblique.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArticulatCF-ThinOblique.ttf"; sourceTree = "<group>"; };
+		51EC10712991ABA00070E46C /* ArticulatCF-MediumOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArticulatCF-MediumOblique.otf"; sourceTree = "<group>"; };
+		51EC10722991ABA00070E46C /* ArticulatCF-BoldOblique.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArticulatCF-BoldOblique.ttf"; sourceTree = "<group>"; };
+		51EC10732991ABA00070E46C /* ArticulatCF-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArticulatCF-Bold.otf"; sourceTree = "<group>"; };
+		51EC10742991ABA00070E46C /* ArticulatCF-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArticulatCF-ExtraBold.ttf"; sourceTree = "<group>"; };
+		51EC10752991ABA00070E46C /* ArticulatCF-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArticulatCF-Thin.ttf"; sourceTree = "<group>"; };
+		51EC10762991ABA00070E46C /* ArticulatCF-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArticulatCF-ExtraLight.ttf"; sourceTree = "<group>"; };
+		51EC10772991ABA00070E46C /* ArticulatCF-Normal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArticulatCF-Normal.ttf"; sourceTree = "<group>"; };
+		51EC10782991ABA00070E46C /* ArticulatCF-LightOblique.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArticulatCF-LightOblique.ttf"; sourceTree = "<group>"; };
+		51EC10792991ABA10070E46C /* ArticulatCF-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArticulatCF-Medium.ttf"; sourceTree = "<group>"; };
+		51EC107A2991ABA10070E46C /* ArticulatCF-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArticulatCF-Light.otf"; sourceTree = "<group>"; };
+		51EC107B2991ABA10070E46C /* ArticulatCF-DemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArticulatCF-DemiBold.otf"; sourceTree = "<group>"; };
+		51EC107C2991ABA10070E46C /* ArticulatCF-NormalOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArticulatCF-NormalOblique.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +95,7 @@
 		518608822990382C000B0CF9 /* MyMembers */ = {
 			isa = PBXGroup;
 			children = (
+				51EC106D2991AB960070E46C /* Fonts */,
 				5196596D2991624200FF47D5 /* Helpers */,
 				518608A029903A63000B0CF9 /* View Controllers */,
 				518608832990382C000B0CF9 /* AppDelegate.swift */,
@@ -96,6 +126,28 @@
 				5196596B2991623B00FF47D5 /* Utilities.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		51EC106D2991AB960070E46C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				51EC10732991ABA00070E46C /* ArticulatCF-Bold.otf */,
+				51EC10722991ABA00070E46C /* ArticulatCF-BoldOblique.ttf */,
+				51EC107B2991ABA10070E46C /* ArticulatCF-DemiBold.otf */,
+				51EC106E2991AB9F0070E46C /* ArticulatCF-DemiBoldOblique.ttf */,
+				51EC10742991ABA00070E46C /* ArticulatCF-ExtraBold.ttf */,
+				51EC106F2991AB9F0070E46C /* ArticulatCF-ExtraBoldOblique.ttf */,
+				51EC10762991ABA00070E46C /* ArticulatCF-ExtraLight.ttf */,
+				51EC107A2991ABA10070E46C /* ArticulatCF-Light.otf */,
+				51EC10782991ABA00070E46C /* ArticulatCF-LightOblique.ttf */,
+				51EC10792991ABA10070E46C /* ArticulatCF-Medium.ttf */,
+				51EC10712991ABA00070E46C /* ArticulatCF-MediumOblique.otf */,
+				51EC10772991ABA00070E46C /* ArticulatCF-Normal.ttf */,
+				51EC107C2991ABA10070E46C /* ArticulatCF-NormalOblique.otf */,
+				51EC10752991ABA00070E46C /* ArticulatCF-Thin.ttf */,
+				51EC10702991AB9F0070E46C /* ArticulatCF-ThinOblique.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,9 +208,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51EC10892991AD0A0070E46C /* ArticulatCF-Normal.ttf in Resources */,
+				51EC107E2991ACF00070E46C /* ArticulatCF-BoldOblique.ttf in Resources */,
+				51EC10872991AD040070E46C /* ArticulatCF-Medium.ttf in Resources */,
+				51EC10852991AD000070E46C /* ArticulatCF-Light.otf in Resources */,
+				51EC108B2991AD240070E46C /* ArticulatCF-ThinOblique.ttf in Resources */,
+				51EC10882991AD070070E46C /* ArticulatCF-MediumOblique.otf in Resources */,
+				51EC10812991ACF70070E46C /* ArticulatCF-ExtraBold.ttf in Resources */,
 				518608932990382E000B0CF9 /* LaunchScreen.storyboard in Resources */,
+				51EC10822991ACF90070E46C /* ArticulatCF-ExtraBoldOblique.ttf in Resources */,
+				51EC10802991ACF50070E46C /* ArticulatCF-DemiBoldOblique.ttf in Resources */,
+				51EC10842991ACFD0070E46C /* ArticulatCF-ExtraLight.ttf in Resources */,
+				51EC107F2991ACF20070E46C /* ArticulatCF-DemiBold.otf in Resources */,
+				51EC10862991AD020070E46C /* ArticulatCF-LightOblique.ttf in Resources */,
 				518608902990382E000B0CF9 /* Assets.xcassets in Resources */,
+				51EC108A2991AD0C0070E46C /* ArticulatCF-NormalOblique.otf in Resources */,
 				5186088B2990382C000B0CF9 /* Main.storyboard in Resources */,
+				51EC107D2991ACED0070E46C /* ArticulatCF-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
