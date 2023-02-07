@@ -10,7 +10,12 @@ import UIKit
 class HomeViewController: UIViewController {
     
    
-    @IBOutlet weak var navItem: UINavigationItem!
+    
+    @IBAction func logoutButtonTapped(_ sender: Any) {
+        self.performSegue(withIdentifier: "unwindToViewController", sender: self)
+    }
+    
+    
     
     override func viewDidLoad() {
 

@@ -9,7 +9,15 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    // MARK: IBOutlets
     @IBOutlet weak var errorLabel: UILabel!
+    
+   // MARK: IBActions
+    @IBAction func loginButtonTapped(_ sender: Any) {
+        performSegue(withIdentifier: "loginSuccess", sender: (Any).self)
+
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,15 +31,15 @@ class LoginViewController: UIViewController {
     func setupElements() {
         errorLabel.isHidden = true
     }
+    
+    
 
-    /*
-    // MARK: - Navigation
+    
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "loginSuccess" {
+        }
     }
-    */
+    
 
 }

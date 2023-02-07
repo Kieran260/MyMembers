@@ -20,10 +20,6 @@ extension ViewController {
 
 class ViewController: UIViewController, UIScrollViewDelegate {
 
-    
-
-
-    
     // MARK: IBActions
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var signUpButton: UIButton!
@@ -32,18 +28,13 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     // MARK: IBOutlets
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageControl: UIPageControl!
-    
     @IBOutlet weak var imageView: UIImageView!
-    
     @IBOutlet weak var textView: UITextView!
     
     
     
     // MARK: View Related
-    
     override func viewDidLoad() {
-        
-        
         setUpElements()
         createScrollViewContent()
         super.viewDidLoad()
@@ -53,6 +44,11 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     func setUpElements() {
         
     }
+    
+    @IBAction func prepareForUnwind(segue: UIStoryboardSegue) {
+        scrollView.setContentOffset(CGPoint.zero, animated: true)
+    }
+    
     
     func createScrollViewContent() {
         scrollView.delegate = self
@@ -64,8 +60,8 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         let height = 300
 
         scrollView.contentSize = CGSize(width: Int(width) * labels.count, height: height)
-        
         scrollView.isPagingEnabled = true
+        
         pageControl.currentPage = 0
         
         // ImageView
@@ -74,7 +70,6 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             let frame = CGRect(x: x, y: 0, width: width, height: CGFloat(height))
             let imageView = UIImageView(frame: frame)
             imageView.image = UIImage(named: imgName)
-            
             scrollView.addSubview(imageView)
             x += width
         }
@@ -85,21 +80,13 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             let frame = CGRect(x: xx, y: 300, width: width, height: CGFloat(50))
             let textView = UITextView(frame: frame)
             textView.text = label
-            textView.font = UIFont(name: "Articulat CF Normal", size:14)
+            textView.font = UIFont(name: "Articulat CF Normal", size: 14)
             textView.isEditable = false
             textView.isSelectable = false
+            textView.isUserInteractionEnabled = false
             scrollView.addSubview(textView)
             xx += width
         }
-        
-        
     }
-    
-
-
-    
-   
-
-
 }
 

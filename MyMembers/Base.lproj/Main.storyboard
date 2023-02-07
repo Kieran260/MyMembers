@@ -32,16 +32,16 @@
                                 <rect key="frame" x="40" y="131" width="295" height="607"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xuF-NG-j9q" userLabel="Welcome Text">
-                                        <rect key="frame" x="0.0" y="0.0" width="295" height="54.666666666666664"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="295" height="46.666666666666664"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to MyMembers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFc-WC-drz">
-                                                <rect key="frame" x="0.0" y="0.0" width="295" height="32.666666666666664"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="295" height="28"/>
                                                 <fontDescription key="fontDescription" name="ArticulatCF-Medium" family="Articulat CF" pointSize="24"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log in or sign up below to get started" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgE-5p-9Pg">
-                                                <rect key="frame" x="0.0" y="32.666666666666657" width="295" height="22"/>
+                                                <rect key="frame" x="0.0" y="28" width="295" height="18.666666666666671"/>
                                                 <fontDescription key="fontDescription" name="ArticulatCF-Normal" family="Articulat CF" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -49,7 +49,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FJn-nI-AfJ" userLabel="ScrollView Stack">
-                                        <rect key="frame" x="0.0" y="88" width="295" height="386"/>
+                                        <rect key="frame" x="0.0" y="84" width="295" height="386"/>
                                         <subviews>
                                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaa-6T-djM">
                                                 <rect key="frame" x="0.0" y="0.0" width="295" height="350"/>
@@ -57,8 +57,8 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="167" translatesAutoresizingMaskIntoConstraints="NO" id="8TW-pd-L9j">
                                                         <rect key="frame" x="0.0" y="0.0" width="295" height="350"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="pkM-s2-YaR">
-                                                                <rect key="frame" x="0.0" y="1" width="295" height="131.66666666666666"/>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pkM-s2-YaR">
+                                                                <rect key="frame" x="0.0" y="0.0" width="295" height="133"/>
                                                             </imageView>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zue-62-WMu">
                                                                 <rect key="frame" x="0.0" y="300" width="295" height="50"/>
@@ -73,7 +73,6 @@
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.96862745289999996" green="0.8078432083" blue="0.27450981740000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstItem="WW3-dt-Xf3" firstAttribute="bottom" secondItem="8TW-pd-L9j" secondAttribute="bottom" id="3nE-j3-mmg"/>
                                                     <constraint firstItem="8TW-pd-L9j" firstAttribute="top" secondItem="WW3-dt-Xf3" secondAttribute="top" id="Oya-V9-UrD"/>
@@ -225,7 +224,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Log In"/>
                                         <connections>
-                                            <segue destination="Vl3-nX-3rT" kind="show" id="IaS-84-hiY"/>
+                                            <action selector="loginButtonTapped:" destination="qYN-hm-xft" eventType="touchUpInside" id="ReG-XH-Wef"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1k-9D-wUe">
@@ -245,8 +244,10 @@
                             <constraint firstItem="JKl-9l-4Ne" firstAttribute="leading" secondItem="coi-VL-YWJ" secondAttribute="leading" constant="40" id="QS7-4t-7pE"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="KJT-lg-6XI"/>
                     <connections>
                         <outlet property="errorLabel" destination="e1k-9D-wUe" id="WlM-25-sU0"/>
+                        <segue destination="Vl3-nX-3rT" kind="presentation" identifier="loginSuccess" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="95O-p6-BgV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Suj-FB-rVl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -262,7 +263,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="am5-Iy-ZiA">
-                                <rect key="frame" x="40" y="111" width="295" height="113.33333333333331"/>
+                                <rect key="frame" x="40" y="67" width="295" height="113.33333333333331"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cJl-rT-bjR">
                                         <rect key="frame" x="0.0" y="0.0" width="295" height="36"/>
@@ -279,6 +280,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="Logout">
                                                     <fontDescription key="titleFontDescription" name="ArticulatCF-Normal" family="Articulat CF" pointSize="16"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="logoutButtonTapped:" destination="lBP-jO-qMo" eventType="touchUpInside" id="hpR-q9-Il3"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -313,15 +317,19 @@
                     <tabBarItem key="tabBarItem" title="Home" id="J64-rq-emc">
                         <imageReference key="image" image="house.fill" catalog="system" symbolScale="large"/>
                     </tabBarItem>
+                    <connections>
+                        <segue destination="um3-5u-Bbm" kind="unwind" identifier="unwindToViewController" unwindAction="prepareForUnwindWithSegue:" id="wEX-58-wy9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qxL-Vz-bI4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="um3-5u-Bbm" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1801" y="1176"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="SW0-AE-NZc">
             <objects>
-                <tabBarController id="Vl3-nX-3rT" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" title="Tab Bar Controller" id="Vl3-nX-3rT" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="dQV-qo-Otk"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Vnt-nk-0gG">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="49"/>
@@ -347,7 +355,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="oB4-Ew-1Tf">
-                                <rect key="frame" x="40" y="111" width="295" height="250"/>
+                                <rect key="frame" x="40" y="67" width="295" height="250"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Memberships" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9F-bJ-t9Y">
                                         <rect key="frame" x="0.0" y="0.0" width="174" height="30"/>
@@ -525,6 +533,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XOW-Gt-aC9" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="xcQ-GT-zGc"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6am-rR-h1J">
                         <rect key="frame" x="0.0" y="47" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -550,7 +559,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="h85-JO-yj5">
-                                <rect key="frame" x="40" y="111" width="295" height="250"/>
+                                <rect key="frame" x="40" y="67" width="295" height="250"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQw-Ax-Op9">
                                         <rect key="frame" x="0.0" y="0.0" width="159" height="30"/>
@@ -586,13 +595,12 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="MQo-Bo-mOo"/>
+        <segue reference="95O-p6-BgV"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="list.bullet.circle.fill" catalog="system" width="128" height="123"/>
         <image name="person.circle.fill" catalog="system" width="128" height="123"/>
-        <image name="square.and.arrow.up.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
