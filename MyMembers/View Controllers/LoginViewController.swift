@@ -6,18 +6,39 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
 
+    var email = ""
+    var password = ""
+    
     // MARK: IBOutlets
     @IBOutlet weak var errorLabel: UILabel!
     
    // MARK: IBActions
     @IBAction func loginButtonTapped(_ sender: Any) {
-        performSegue(withIdentifier: "loginSuccess", sender: (Any).self)
+        
+        email = emailTextField.text ?? ""
+        password = passwordTextField.text ?? ""
+        
+        Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
+            guard let strongSelf = self else { return }
+            // ...
+            if let error = error {
+                self?.errorLabel.text = "Error: \(error.localizedDescription)"
+                self?.errorLabel.isHidden = false
+                print("Error signing in: \(error.localizedDescription)")
+            } else {
+                print("Successfully signed in")
+                self?.performSegue(withIdentifier: "loginSuccess", sender: strongSelf)
+            }
 
+        }
     }
     
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
