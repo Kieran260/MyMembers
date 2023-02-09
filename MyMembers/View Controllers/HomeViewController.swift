@@ -9,30 +9,32 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    // MARK: Variables
+    var name = String()
    
+    // MARK: IBOutlets
+    @IBOutlet weak var greetingLabel: UILabel!
+    
+    
+    // MARK: IBActions
     
     @IBAction func logoutButtonTapped(_ sender: Any) {
         self.performSegue(withIdentifier: "unwindToViewController", sender: self)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        setUpElements()
+    }
     
     
     override func viewDidLoad() {
-
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // MARK: Functions
+    
+    func setUpElements() {
+        greetingLabel.text = "Hello, \(name)"
     }
-    */
 
 }

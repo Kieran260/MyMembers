@@ -259,7 +259,7 @@
         <!--Home-->
         <scene sceneID="7bd-Cp-deF">
             <objects>
-                <viewController id="lBP-jO-qMo" userLabel="Home" customClass="HomeViewController" customModule="MyMembers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="HomeViewController" id="lBP-jO-qMo" userLabel="Home" customClass="HomeViewController" customModule="MyMembers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tPI-Ww-QAO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -320,6 +320,7 @@
                         <imageReference key="image" image="house.fill" catalog="system" symbolScale="large"/>
                     </tabBarItem>
                     <connections>
+                        <outlet property="greetingLabel" destination="Tup-gn-u6J" id="w9G-t2-TSl"/>
                         <segue destination="um3-5u-Bbm" kind="unwind" identifier="unwindToViewController" unwindAction="prepareForUnwindWithSegue:" id="wEX-58-wy9"/>
                     </connections>
                 </viewController>

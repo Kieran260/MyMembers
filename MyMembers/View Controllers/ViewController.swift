@@ -52,7 +52,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     
     func createScrollViewContent() {
         scrollView.delegate = self
-        
+
         let labels = ["Free yourself from managing your memberships on multiple platforms.", "Avoid missing renewal dates and manage your finances all in one place.", "Eliminate email interactions and communicate with your organisation directly."]
         let imageNames = ["pg1", "pg2", "pg3"]
         
