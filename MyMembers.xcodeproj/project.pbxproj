@@ -22,6 +22,7 @@
 		5186089D29903A51000B0CF9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5186089C29903A51000B0CF9 /* LoginViewController.swift */; };
 		5186089F29903A5E000B0CF9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5186089E29903A5E000B0CF9 /* HomeViewController.swift */; };
 		5196596C2991623B00FF47D5 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196596B2991623B00FF47D5 /* Utilities.swift */; };
+		51E25D0929A0236200A14D83 /* MembershipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E25D0829A0236200A14D83 /* MembershipViewController.swift */; };
 		51EC107D2991ACED0070E46C /* ArticulatCF-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 51EC10732991ABA00070E46C /* ArticulatCF-Bold.otf */; };
 		51EC107E2991ACF00070E46C /* ArticulatCF-BoldOblique.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 51EC10722991ABA00070E46C /* ArticulatCF-BoldOblique.ttf */; };
 		51EC107F2991ACF20070E46C /* ArticulatCF-DemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 51EC107B2991ABA10070E46C /* ArticulatCF-DemiBold.otf */; };
@@ -53,6 +54,7 @@
 		5186089C29903A51000B0CF9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5186089E29903A5E000B0CF9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5196596B2991623B00FF47D5 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		51E25D0829A0236200A14D83 /* MembershipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembershipViewController.swift; sourceTree = "<group>"; };
 		51EC106E2991AB9F0070E46C /* ArticulatCF-DemiBoldOblique.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArticulatCF-DemiBoldOblique.ttf"; sourceTree = "<group>"; };
 		51EC106F2991AB9F0070E46C /* ArticulatCF-ExtraBoldOblique.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArticulatCF-ExtraBoldOblique.ttf"; sourceTree = "<group>"; };
 		51EC10702991AB9F0070E46C /* ArticulatCF-ThinOblique.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArticulatCF-ThinOblique.ttf"; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				518608872990382C000B0CF9 /* ViewController.swift */,
 				5186089A29903A43000B0CF9 /* SignUpViewController.swift */,
 				5186089C29903A51000B0CF9 /* LoginViewController.swift */,
+				51E25D0829A0236200A14D83 /* MembershipViewController.swift */,
 				5186089E29903A5E000B0CF9 /* HomeViewController.swift */,
 			);
 			path = "View Controllers";
@@ -264,6 +267,7 @@
 				5186089D29903A51000B0CF9 /* LoginViewController.swift in Sources */,
 				518608882990382C000B0CF9 /* ViewController.swift in Sources */,
 				518608842990382C000B0CF9 /* AppDelegate.swift in Sources */,
+				51E25D0929A0236200A14D83 /* MembershipViewController.swift in Sources */,
 				518608862990382C000B0CF9 /* SceneDelegate.swift in Sources */,
 				5186088E2990382C000B0CF9 /* MyMembers.xcdatamodeld in Sources */,
 				5186089F29903A5E000B0CF9 /* HomeViewController.swift in Sources */,

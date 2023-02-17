@@ -103,7 +103,7 @@
                                                     <fontDescription key="titleFontDescription" name="ArticulatCF-Medium" family="Articulat CF" pointSize="18"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <segue destination="qYN-hm-xft" kind="show" destinationCreationSelector="toLogin" id="Qw4-zc-ovy"/>
+                                                    <segue destination="qYN-hm-xft" kind="show" id="Qw4-zc-ovy"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56n-YN-vTD">
@@ -352,28 +352,48 @@
         <!--My Memberships-->
         <scene sceneID="oTp-V9-ZFQ">
             <objects>
-                <viewController id="ZWE-w3-jt4" sceneMemberID="viewController">
+                <viewController id="ZWE-w3-jt4" customClass="MembershipViewController" customModule="MyMembers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="T9I-vz-nIY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="oB4-Ew-1Tf">
-                                <rect key="frame" x="40" y="67" width="295" height="250"/>
+                                <rect key="frame" x="40" y="67.000000000000014" width="295" height="254.33333333333337"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Memberships" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9F-bJ-t9Y">
-                                        <rect key="frame" x="0.0" y="0.0" width="174" height="30"/>
-                                        <fontDescription key="fontDescription" name="ArticulatCF-DemiBold" family="Articulat CF" pointSize="22"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="amU-vo-vbt">
+                                        <rect key="frame" x="0.0" y="0.0" width="295" height="34.333333333333336"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Memberships" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9F-bJ-t9Y">
+                                                <rect key="frame" x="0.0" y="2.3333333333333286" width="175" height="30"/>
+                                                <fontDescription key="fontDescription" name="ArticulatCF-DemiBold" family="Articulat CF" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIH-7l-PKk">
+                                                <rect key="frame" x="235" y="0.0" width="60" height="34.333333333333336"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="BI3-Jj-wfc"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="New"/>
+                                                <connections>
+                                                    <action selector="newMembershipButton:" destination="ZWE-w3-jt4" eventType="touchUpInside" id="anE-9Q-bVF"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="VeA-T5-jQy">
-                                        <rect key="frame" x="0.0" y="50" width="295" height="200"/>
+                                        <rect key="frame" x="0.0" y="54.333333333333314" width="295" height="200"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="200" id="rlP-VN-og2"/>
                                         </constraints>
                                     </tableView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="amU-vo-vbt" secondAttribute="trailing" id="g4p-cr-HVa"/>
+                                    <constraint firstItem="amU-vo-vbt" firstAttribute="leading" secondItem="oB4-Ew-1Tf" secondAttribute="leading" id="ozb-bE-O3P"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="S4X-1m-mfr"/>
@@ -390,7 +410,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kJ0-wn-GDl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2764" y="1176"/>
+            <point key="canvasLocation" x="2764" y="1175.615763546798"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="w0M-8V-htA">
